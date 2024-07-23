@@ -60,7 +60,7 @@ body {
     padding: 1rem;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     width: 55%;
     border: 3px solid rgb(7, 171, 189);;
     border-radius: 8px;
@@ -69,7 +69,7 @@ body {
 .artwork:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .artwork canvas {
