@@ -334,12 +334,9 @@
         const grid = document.querySelector('.recomendation-grid');
         const prevButton = document.getElementById('prevButton');
         const nextButton = document.getElementById('nextButton');
-
-        // Initial calculation of itemWidth
         let itemWidth = calculateItemWidth();
-
         const numVisibleItems = 3; // Number of items to display at a time
-        // Track the index of the first visible testimonial
+
         let currentIndext = 0;
         prevButton.addEventListener('click', () => {
             if (currentIndext > 0) {
@@ -370,13 +367,13 @@
                 }
             });
         }
+
         function updateButtonState() {
             prevButton.disabled = currentIndext === 0;
             nextButton.disabled = currentIndext === grid.children.length - numVisibleItems;
         }
-        // Initial button state and container visibility
-        updateButtonState();
 
+        updateButtonState();
 
 
         // Function to calculate the itemWidth based on the current screen size
@@ -388,9 +385,7 @@
 
         // Event listener for window resize
         window.addEventListener('resize', () => {
-            // Recalculate itemWidth when the window is resized
             itemWidth = calculateItemWidth();
-            // Update the slider position with the new itemWidth
             updateSliderPosition();
         });
 
