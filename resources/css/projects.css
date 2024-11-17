@@ -37,12 +37,12 @@ body::before {
     z-index: -1;
 }
 
-.featured-artworks {
+.featured-projects {
     padding: 2.5rem;
     text-align: center;
 }
 
-.featured-artworks h1 {
+.featured-projects h1 {
     font-weight: bold;
     max-width: fit-content;
     margin: auto;
@@ -50,7 +50,7 @@ body::before {
     color: white;
 }
 
-.featured-artworks h3 {
+.featured-projects h3 {
     padding-bottom: 1.5rem;
     max-width: fit-content;
     margin: auto;
@@ -61,7 +61,7 @@ body::before {
     color: white;
 }
 
-.artwork-grid {
+.projects-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -69,7 +69,7 @@ body::before {
     align-items: center;
 }
 
-.artwork {
+.projects {
     display: flex;
     align-items: center;
     background-color: white;
@@ -82,18 +82,18 @@ body::before {
     border-radius: 8px;
 }
 
-.artwork:hover{
+.projects:hover{
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.05);
     color: white;
 }
 
-.artwork:hover .details p {
+.projects:hover .details p {
     color: white;
 }
 
-.artwork canvas {
+.projects canvas {
     margin-right: 2rem;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -103,18 +103,18 @@ body::before {
     margin-left: 1rem;
 }
 
-.artwork .details {
+.projects .details {
     text-align: left;
     flex-grow: 1;
 }
 
-.artwork .details h4 {
+.projects .details h4 {
     margin: 0 0 0.5rem 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.artwork .details p {
+.projects .details p {
     margin: 0;
     font-size: 1rem;
     color: #555;

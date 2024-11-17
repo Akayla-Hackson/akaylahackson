@@ -9,7 +9,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/8b476543a7.js" crossorigin="anonymous"></script>
-    <link href="./resources/css/artwork.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/projects.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/nav.css" type="text/css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js"></script>
@@ -29,7 +29,7 @@
         <div class="tabs">
             <a href="./index.html">Home</a>
             <a href="./bio.html">Bio</a>
-            <a class="active" href="./artwork.html">Projects</a>
+            <a class="active" href="./projects.html">Projects</a>
             <a href="./4Fun.html">4Fun</a>
             <a href="./contact.html">Contact</a>
         </div>
@@ -53,11 +53,11 @@
     </div>
 
     <div class="container">
-        <section class="featured-artworks">
+        <section class="featured-projects">
             <h1>Machine Learning Projects</h1>
             <h3>Various works produced, highlighting my expertise with machine learning frameworks.</h3>
-            <div class="artwork-grid">
-                <div class="artwork" data-pdf="./resources/pdfs/CS231N.pdf">
+            <div class="projects-grid">
+                <div class="projects" data-pdf="./resources/pdfs/CS231N.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>What Was That?: Lip-Reading Silent Videos</h4>
@@ -67,7 +67,7 @@
                         advancing lip reading technology, though sentence prediction remains challenging.</p>
                     </div>
                 </div>
-                <div class="artwork" data-pdf="./resources/pdfs/CS224N.pdf">
+                <div class="projects" data-pdf="./resources/pdfs/CS224N.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>Patent Acceptance Prediction With Large Language Models</h4>
@@ -76,7 +76,7 @@
                         performance plateaus. Future efforts will focus on refining model capabilities and addressing new challenges.</p>
                     </div>
                 </div>
-                <div class="artwork" data-pdf="./resources/pdfs/Road_Speed_Mozambique_CS_325B.pdf">
+                <div class="projects" data-pdf="./resources/pdfs/Road_Speed_Mozambique_CS_325B.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>Satellite Imagery-Informed Deep Learning for Road Speed Prediction in Rural Mozambique</h4>
@@ -85,7 +85,7 @@
                         improvements and enhancing agricultural productivity in impoverished areas.</p>
                     </div>
                 </div>
-                <div class="artwork" data-pdf="./resources/pdfs/CS330_Final_Report.pdf">
+                <div class="projects" data-pdf="./resources/pdfs/CS330_Final_Report.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>Enhancing Player Tracking Across Sports Domains Through Meta-Learning with Video Input</h4>
@@ -96,7 +96,7 @@
                         analytics.</p>
                     </div>
                 </div>
-                <div class="artwork" data-pdf="./resources/pdfs/YelperHelper.pdf">
+                <div class="projects" data-pdf="./resources/pdfs/YelperHelper.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>The Yelper Helper</h4>
@@ -105,7 +105,7 @@
                         semantic search. The approach aims to streamline the process of finding optimal matches on the platform.</p>
                     </div>
                 </div>
-                <div class="artwork" data-pdf="./resources/pdfs/ICU.pdf">
+                <div class="projects" data-pdf="./resources/pdfs/ICU.pdf">
                     <canvas class="pdf-preview"></canvas>
                     <div class="details">
                         <h4>IC🫵 : Multiple Object Detection in the Domain of Basketball</h4>
@@ -143,13 +143,13 @@
         }
 
         $(document).ready(function () {
-            $(".artwork").each(function () {
+            $(".projects").each(function () {
                 var pdfUrl = $(this).data('pdf');
                 var canvas = $(this).find('.pdf-preview')[0];
                 renderPDFPreview(pdfUrl, canvas);
             });
 
-            $(".artwork").on('click', function () {
+            $(".projects").on('click', function () {
                 var pdfUrl = $(this).data('pdf');
                 window.open(pdfUrl, '_blank');
             });
