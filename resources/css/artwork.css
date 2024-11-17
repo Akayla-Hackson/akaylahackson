@@ -89,6 +89,10 @@ body::before {
     color: white;
 }
 
+.artwork:hover .details p {
+    color: white;
+}
+
 .artwork canvas {
     margin-right: 2rem;
     border: 1px solid #ccc;
