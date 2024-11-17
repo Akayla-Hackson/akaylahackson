@@ -141,21 +141,11 @@ section{
     height: 35px;
 }
 
-/* .position-entity {
-    margin-left: 25px;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: white;
-    display: inline-flex;
-}
-.position-container {
-    display: flex;
-} */
-
 .position-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .position-entity {
