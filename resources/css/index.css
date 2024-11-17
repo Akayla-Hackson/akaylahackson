@@ -18,7 +18,7 @@ body {
   text-align: start;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-image: url(../pics/whiteBricks.jpg);
+  background-image: url(../pics/styling_pics/whiteBricks.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -97,17 +97,26 @@ body {
   height: 55%;
   width: 22%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 #openingPic {
   height: 100%;
   width: 100%;
 }
-
 .pictureFrame img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center;
+  /* scale: 1.2; */
+}
+/* .pictureFrame img {
   width: 100%;
   height: auto;
-}
+  object-fit: cover;
+ transition: transform 0.3s ease-in-out; 
+} */
 
 /* .pictureFrame img:hover {
   -webkit-transform: scale(0.993);

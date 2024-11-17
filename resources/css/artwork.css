@@ -17,9 +17,24 @@ body {
     text-align: start;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-    background-image: url(../pics/whiteBricks.jpg);
+    background-image: url(../pics/styling_pics/human_ai.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: -1;
 }
 
 .featured-artworks {
@@ -31,18 +46,19 @@ body {
     font-weight: bold;
     max-width: fit-content;
     margin: auto;
-    font-size: 2.2rem;
-    /* Increased font size */
+    font-size: 2.5rem;
+    color: white;
 }
 
 .featured-artworks h3 {
     padding-bottom: 1.5rem;
     max-width: fit-content;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.75rem;
     font-style: italic;
     padding-top: 10px;
     margin-bottom: 2px;
+    color: white;
 }
 
 .artwork-grid {
@@ -66,10 +82,11 @@ body {
     border-radius: 8px;
 }
 
-.artwork:hover {
+.artwork:hover{
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.05);
+    color: white;
 }
 
 .artwork canvas {

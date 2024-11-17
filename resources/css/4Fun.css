@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: "Lucida Bright";
+    box-sizing: border-box;
+    margin: 0;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucida Bright";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    text-align: start;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-image: url(../pics/styling_pics/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fun-section {
+    padding: 2.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+}
+
+.fun-bubble {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fun-bubble h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.fun-bubble p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+    padding-top: 1rem;
+}
+
+/* Carousel images */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .fun-bubble {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: auto;
+        max-height: 300px;
+    }
+}
