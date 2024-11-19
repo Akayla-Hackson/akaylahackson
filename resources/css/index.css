@@ -265,7 +265,7 @@ body {
 
 /***********************************************************/
 /* Media query for smaller screens */
-@media (max-width: 1120px) {
+@media (max-width: 1250px) {
   .pictureFrame {
     height: 45%;
     right: 2%;
@@ -570,6 +570,40 @@ body {
     position: absolute;
     margin: 1rem auto 2rem;
     top: 45vh;
+  }
+}
+
+@media (max-width: 600px) {
+#openingHeader {
+    font-size: 2.5em;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 10vh;
+  }
+  .hangingLight {
+    height: 25%;
+    position: absolute;
+    left: 38%;
+    transform: translateX(-50%);
+  }
+  #quickQuote {
+    font-size: 1em;
+    top: 36vh;
+    width: 100%;
+    padding: 15px 20px 15px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pictureFrame {
+    width: 25%;
+    height: 30%;
+    padding: 10px;
+    left: 27%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 1rem auto 2rem;
+    top: 46vh;
   }
 }
 
