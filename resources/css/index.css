@@ -46,11 +46,12 @@ body {
   line-height: 90%;
   font-weight: 900;
   height: 80%;
-  right: 23%;
-  top: 28.5%;
+  right: 22.5%;
+  top: 29%;
   background-color: transparent;
   padding: 10px;
   position: absolute;
+  letter-spacing: 0.03rem;
 }
 
 #openingHeader {
