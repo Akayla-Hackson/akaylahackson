@@ -281,7 +281,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -327,7 +326,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -373,7 +371,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -415,7 +412,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -457,7 +453,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -499,7 +494,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0;
     position: absolute;
     height: auto;
     width: 100%;
@@ -542,7 +536,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -580,7 +573,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -619,7 +611,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -658,7 +649,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -697,7 +687,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -733,7 +722,6 @@ body {
 
   #openingHeader {
     font-size: 4em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
@@ -772,11 +760,10 @@ body {
 
   #openingHeader {
     font-size: 3.5em;
-    right: 0%;
     position: absolute;
     height: auto;
     width: 100%;
-    top: 11vh;
+    top: 9vh;
   }
 
   #quickQuote {
