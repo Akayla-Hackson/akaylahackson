@@ -154,19 +154,18 @@ body {
   height: 255px;
   display: block;
   position: absolute;
-  left: calc(18% - 18px);
+  left: calc(29% - 18px);
   transform: translateX(-50%);
 }
 
 .name {
   position: absolute;
-  width: 550px;
+  width: 680px;
   height: 500px;
-  right: 43%;
+  right: 41%;
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
-
 }
 
 
