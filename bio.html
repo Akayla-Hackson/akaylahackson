@@ -224,28 +224,10 @@
                 <div class="testimonial">
                     <div class="testimonial-content">
                         <p class="testimonial-text">
-                            Akayla’s leadership and work ethic have transformed programs and set new standards for success. Her vision
-                            and determination have had a lasting impact on everyone she’s worked with, myself included. She leads by
-                            example, and her passion and drive inspire everyone around her.
-                        </p>
-                    </div>
-                    <div class="content-spacer"></div>
-                    <div class="profile">
-                        <a target="_blank" href="https://www.linkedin.com/in/renee-jimenez-759395208/" class="account-photo">
-                            <img src="./resources/pics/references_pics/renee.jpeg" alt="profile-picture" /></a>
-                        <p class="profile-name">
-                            Renee Jimenez <br />
-                            <span class="location">UC Santa Barbara</span><br />
-                            <span class="role">Head Coach - CSU, San Marcos</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            Working with Akayla is always a rewarding experience thanks to her dedication and collaborative spirit. She approaches
-                            tasks with enthusiasm and ensures success. I’ve appreciated her ability to combine technical skill with genuine
-                            camaraderie.
+                            Working with Akayla is always a rewarding experience thanks to her dedication and collaborative spirit. 
+                            She approaches challenges with enthusiasm and consistently drives results. 
+                            I’ve especially appreciated her ability to combine strong technical skill with genuine camaraderie. 
+                            I’m confident she will continue to build and succeed at a high level in all her endeavors.
                         </p>
                     </div>
                     <div class="content-spacer"></div>
@@ -259,6 +241,25 @@
                             <span class="location">
                                 Chief AI Officer - Kognitos</span><br />
                             <span class="role">Peer - Sanford University</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            Akayla’s leadership and work ethic have transformed programs and set new standards for success. Her vision
+                            and determination have had a lasting impact on everyone she’s worked with, myself included. She leads by
+                            example, and her passion and drive inspire everyone around her.
+                        </p>
+                    </div>
+                    <div class="content-spacer"></div>
+                    <div class="profile">
+                        <a target="_blank" href="https://www.linkedin.com/in/renee-jimenez-759395208/" class="account-photo">
+                            <img src="./resources/pics/references_pics/renee.jpeg" alt="profile-picture" /></a>
+                        <p class="profile-name">
+                            Renee Jimenez <br />
+                            <span class="location">UC Santa Barbara</span><br />
+                            <span class="role">Head Coach - CSU, San Marcos</span>
                         </p>
                     </div>
                 </div>
@@ -459,12 +460,11 @@
         </div>
     </section>
     <script>
-        const sliderContainer = document.querySelector('.slider-container');
         const grid = document.querySelector('.recomendation-grid');
         const prevButton = document.getElementById('prevButton');
         const nextButton = document.getElementById('nextButton');
         let itemWidth = calculateItemWidth();
-        const numVisibleItems = 3; // Number of items to display at a time
+        const numVisibleItems = 3;
 
         let currentIndext = 0;
         prevButton.addEventListener('click', () => {
@@ -481,18 +481,19 @@
                 updateButtonState();
             }
         });
+
         function updateSliderPosition() {
             const testimonials = Array.from(grid.children);
 
             testimonials.forEach((testimonial, index) => {
                 if (index >= currentIndext && index < currentIndext + numVisibleItems) {
-                    // Testimonial is in the visible area, so make it visible
                     testimonial.style.transform = `translateX(${-currentIndext * itemWidth}px)`;
                     testimonial.style.opacity = 1;
+                    testimonial.style.pointerEvents = 'auto';
                 } else {
-                    // Testimonial is not in the visible area, so move it off-screen
                     testimonial.style.transform = 'translateX(-100%)';
                     testimonial.style.opacity = 0;
+                    testimonial.style.pointerEvents = 'none';
                 }
             });
         }
@@ -504,19 +505,17 @@
 
         updateButtonState();
 
-
-        // Function to calculate the itemWidth based on the current screen size
         function calculateItemWidth() {
             const testimonial = grid.querySelector('.testimonial');
             return testimonial.offsetWidth + parseFloat(20);
         }
 
-
-        // Event listener for window resize
         window.addEventListener('resize', () => {
             itemWidth = calculateItemWidth();
             updateSliderPosition();
         });
+
+        updateSliderPosition();
 
     </script>
 
